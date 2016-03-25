@@ -9,7 +9,7 @@
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 header {
@@ -42,17 +42,18 @@ header a:active {
 header div.line {
     max-width: 612px;
     height: 13px;
+    margin: -24px 10px 8px 12px;
     -webkit-transform: skew(55deg);
     -moz-transform: skew(55deg);
     -o-transform: skew(55deg);
     background: #000;
-    margin: -24px 10px 8px 12px;
+
 }
 
 header img {
+    position: absolute;
     top: 26px;
     right: 58px;
-    position: absolute;
 }
 
 header div.smoke {
