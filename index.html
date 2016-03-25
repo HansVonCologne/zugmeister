@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zugmeister test</title>
+
+        <style>
+            @import url(style.css);
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <section>
+                <a href="/">ZUGMEISTER</a>
+                <div class="line"></div>
+                <img src="assets/trein.png" alt="Der Meister unter den Zügen">
+                <div class="smoke"></div>
+            </section>
+        </header>
+
+        <main>
+            <section class="filter">
+                <div>
+                    <dl>
+                        <dt>Vehicle</dt>
+                        <dd>
+                            <select name="vehicles" id="vehicles">
+                                <option value="All">All</option>
+                            </select>
+                        </dd>
+
+                        <dt>Brand</dt>
+                        <dd>
+                            <select name="brands" id="brands">
+                                <option value="All">All</option>
+                            </select>
+                        </dd>
+
+                        <dt>Color</dt>
+                        <dd>
+                            <select name="colors" id="colors">
+                                <option value="All">All</option>
+                            </select>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="info">
+                <div>
+
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js"></script>
+        <script type="text/javascript" src="service/index.js"></script>
+        <script type="text/javascript" src="selectForm.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var controlls = new Controlls();
+                controlls.init();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Chi-TownNF";
+    src: url('assets/Chi-TownNF.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: "lmmonocaps10-oblique";
+    src: url('assets/lmmonocaps10-oblique.otf') format("opentype");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    background: #e0641a;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+    padding: 10px;
+    background: #fff;
+}
+
+header section {
+    padding: 0 0 0 20px;
+    font-family: "Chi-TownNF";
+    font-size: 100px;
+    border: 5px solid #000;
+}
+
+header a,
+header a:hover,
+header a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+header div.line {
+    max-width: 612px;
+    height: 13px;
+    -webkit-transform: skew(55deg);
+    -moz-transform: skew(55deg);
+    -o-transform: skew(55deg);
+    background: #000;
+    margin: -24px 10px 8px 12px;
+}
+
+header img {
+    top: 26px;
+    right: 58px;
+    position: absolute;
+}
+
+header div.smoke {
+    position: absolute;
+    top: -10px;
+    right: 130px;
+    width: 100px;
+    height: 80px;
+    background: url(http://pngimg.com/upload/smoke_PNG979.png);
+    background-size: 100px 80px;
+}
+
+header:hover img {
+    animation: train 5s infinite;
+    animation-timing-function: cubic-bezier(.69,.15,.51,.87);
+}
+
+header:hover div.smoke {
+    animation: smoke 5s infinite;
+    animation-timing-function: cubic-bezier(.69,.15,.51,.87);
+}
+
+@keyframes train {
+    0%   {
+        right: 58px;
+    }
+
+    100% {
+        right: 888px;
+        opacity: 0;
+    }
+}
+
+@keyframes smoke {
+    0%   {
+        top: -10px;
+        right: 130px;
+        opacity: 1;
+    }
+
+    25% {
+        top: -40px;
+        right: 130px;
+        opacity: 0;
+    }
+
+    26%   {
+        top: -10px;
+        right: 222px;
+        opacity: 1;
+    }
+
+    50% {
+        top: -40px;
+        right: 222px;
+        opacity: 0;
+    }
+
+    51%   {
+        top: -10px;
+        right: 464px;
+        opacity: 0.5;
+    }
+
+    100% {
+        top: -40px;
+        right: 464px;
+        opacity: 0;
+    }
+}
+
+main {
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Chi-TownNF";
+    font-size: 25px;
+}
+
+main section select {
+    width: 270px;
+    height: 35px;
+    border: 2px solid #000;
+    background: #fff;
+}
+
+section.filter {
+    float: left;
+    width: 55%;
+    padding: 10px;
+    background: #fff;
+}
+
+section.filter div {
+    width: 100%;
+    height: 400px;
+    font-family: "lmmonocaps10-oblique";
+    border: 5px solid #000;
+}
+
+section.filter dl {
+    width: 270px;
+    margin: auto;
+}
+
+section.filter dt {
+    margin: 0;
+}
+
+section.filter dd {
+    margin: 0;
+}
+
+section.info {
+    float: right;
+    width: 44%;
+    padding: 10px;
+    background: #fff;
+}
+
+section.info div {
+    width: 100%;
+    height: 400px;
+    font-family: "Chi-TownNF";
+    border: 5px solid #000;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "zugmeister",
+  "version": "1.0.0",
+  "description": "Intake case from Sytac",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansVonCologne/zugmeister.git"
+  },
+  "author": "Hans von Cologne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HansVonCologne/zugmeister/issues"
+  },
+  "homepage": "https://github.com/HansVonCologne/zugmeister#readme"
+}
